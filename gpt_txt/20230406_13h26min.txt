@@ -1,0 +1,5 @@
+{'content': '你会用python吗', 'role': 'user'} 
+{
+  "content": "\u662f\u7684\uff0c\u6211\u4f5c\u4e3a\u4e00\u540dAI\u8bed\u8a00\u6a21\u578b\uff0c\u53ef\u4ee5\u4f7f\u7528Python\u8fdb\u884c\u7f16\u7a0b\u548c\u6587\u672c\u5206\u6790\u3002",
+  "role": "assistant"
+} 
