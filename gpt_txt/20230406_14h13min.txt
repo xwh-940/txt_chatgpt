@@ -1,0 +1,2 @@
+{'content': '你会用python吗', 'role': 'user'} 
+{'content': '是的，我是一个基于Python编写的AI语言模型，可以使用Python编写程序。', 'role': 'assistant'} 
