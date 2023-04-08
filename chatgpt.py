@@ -66,6 +66,7 @@ def chat_gpt_func():
     )
     # 将gpt回答纳入上文
     response = completion.choices[0].message
+    #print(completion)
     message.append(response)
     save_md("GPT:<br>"+response["content"]+"<br>")
     save_txt({"content":response["content"],"role":"assistant"})

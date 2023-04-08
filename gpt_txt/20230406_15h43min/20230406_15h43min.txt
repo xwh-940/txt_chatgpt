@@ -1,0 +1,6 @@
+{'content': '你好', 'role': 'user'} 
+{'content': '您好! 有什么我可以帮助您的吗？', 'role': 'assistant'} 
+{'content': '你知道julia吗', 'role': 'user'} 
+{'content': '是的，我知道。Julia是一种高级动态编程语言，用于科学计算、数学建模、数据分析和许多其他领域。Julia最初由MIT计算机科学和人工智能实验室的一组研究人员开发，它被广泛认为是一种乔装成工具的动态语言，具有语法简单、易于使用、可扩展性、高速度等优点，很受欢迎。', 'role': 'assistant'} 
+{'content': 'openai的api如何保持上下文', 'role': 'user'} 
+{'content': 'OpenAI的API可以通过将上下文（Context）信息传递给API来保持上下文。\n\n比如，使用OpenAI的语言模型API时，您可以在API请求中传递上下文信息，告诉API当前对话的背景，这样API就可以更好地理解您的问题和回答。\n\n举个例子，假设您正在与拥有上下文语境的机器人对话。您可以在API请求中传递前几句话，告诉API当前的对话主题，以便机器人可以更好地回答您的问题。可以使用以下代码片段示例向GPT-3的API发送一个带有上下文的文本：\n\n```\nimport openai\nopenai.api_key = "YOUR_API_KEY"\nmodel_engine = "text-babbage-001"\nprompt_text = "Hello, how are you doing today?"\ncontext = "I\'m doing pretty good, thanks for asking. I\'m actually really excited to be talking to you today, because I\'ve been thinking about how to better understand the world around us."\ncompletions = openai.Completion.create(\n    engine=model_engine,\n    prompt=prompt_text,\n    max_tokens=1024,\n    n=1,\n    stop=None,\n    temperature=0.5,\n    frequency_penalty=0,\n    presence_penalty=0,\n    metadata=None,\n    timeout=None,\n    logprobs=None,\n    echo=True,\n    context=context\n)\nmessage = completions.choices[0].text.strip()\nprint(message)\n```\n\n这样，当您询问指定主题时，OpenAI的API可以基于特定的上下文语境提供更好的答案。', 'role': 'assistant'} 
